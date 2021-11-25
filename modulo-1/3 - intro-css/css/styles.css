@@ -1,0 +1,75 @@
+
+/******************************* 
+
+.selector {
+    propiedad: valor
+} 
+
+********************************/
+
+body { /* selector de etiqueta */
+    margin: 0;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* Layout */
+.container { /* Selector de class */
+    width: 1240px;
+    margin: auto;
+}
+
+/* Backgrounds */
+.bg-primary {
+    background-color: darkseagreen;
+}
+
+
+/* Buttons */
+.button {
+    background-color: #DDD;
+    border: none; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 13px; 
+    padding: 3px 25px;
+    text-decoration: none;
+}
+.button-primary {
+    background-color: darkseagreen; 
+    color: white; 
+}
+.button-secondary {
+    background-color: olive;
+    color: white;
+}
+.button-rounded {
+    border-radius: 20px; 
+}
+
+.top {
+    background-color: #525252;
+    color: #AAA;
+    padding: 5px 20px;
+}
+
+/* Header */
+.header {
+    background-color: #EEE;
+    padding: 20px;
+}
+
+/* */
+.title {
+    font-weight: normal;
+}
+
+.contact {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#latest-news p {
+    margin-bottom: 5px;
+}
