@@ -1,0 +1,121 @@
+
+/******************************* 
+
+.selector {
+    propiedad1: valor
+    propiedad2: valor
+} 
+
+********************************/
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap');
+
+@font-face {
+    font-family: "Peugeot Font";
+    src: url("./fonts/peugeot-bold.otf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Peugeot Font";
+    src: url(./fonts/peugeot-normal.otf), url(./fonts/peugeot-normal.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Peugeot Font";
+    src: url("./fonts/peugeot-semibold-italic.otf");
+    font-weight: 600;
+    font-style: italic;
+}
+
+
+
+/* */
+body { /* selector de etiqueta */
+    margin: 0;
+    font-family: "Peugeot Font",'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 13px;
+    text-align: center;
+}
+
+p { /* selector de etiqueta */
+    margin-bottom: 20px;
+    margin-top: 0px;
+    line-height: 1.4;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+}
+
+article {
+    margin: 10px 20px 30px;
+    border: 5px solid red;
+    padding: 20px;
+}
+
+/* Layout */
+.container { /* Selector de class */
+    width: 1240px;
+    margin: auto;
+}
+
+/* Backgrounds */
+.bg-primary {
+    background-color: darkseagreen;
+}
+
+
+/* Buttons */
+.button {
+    background-color: #DDD;
+    border: none; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 13px; 
+    padding: 3px 25px;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    width: 300px;
+    height: 40px;
+}
+.button-primary {
+    background-color: darkseagreen; 
+    color: white; 
+}
+.button-secondary {
+    background-color: olive;
+    color: white;
+}
+.button-rounded {
+    border-radius: 20px; 
+}
+
+.top {
+    background-color: #525252;
+    color: #AAA;
+    padding: 5px 20px;
+}
+
+/* Header */
+.header {
+    background-color: #EEE;
+    padding: 20px;
+}
+
+/* */
+.title {
+    font-weight: normal;
+}
+
+.contact {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#latest-news p {
+    margin-bottom: 5px;
+}
