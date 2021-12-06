@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html, body {
+            height: 100vh;
+        }
+        body {
+            padding: 30px;
+        }
+        * {
+            border: 2px solid;
+            height: 100px;
+            margin-bottom: 20px;
+        }
+
+        .d-block {
+            display: block;
+        }
+        .d-inline {
+            display: inline;
+        }
+
+        .inline-elements-wrapper {
+            padding: 20px;
+        }
+        .inline-elements-wrapper * {
+            display: inline-block;
+            height: auto;
+            margin-bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    
+    <header class="d-inline">Hola mundo!</header>
+
+    <div></div>
+
+    <a href="" class="d-block">Esto es un link</a>
+
+    <span></span>
+
+    <h3></h3>
+
+    <section></section>
+
+
+    <div class="inline-elements-wrapper">
+        <a href="">Esto es un link</a>
+    
+        <span>Esto es un span</span>
+    
+        <img src="./assets/images/monster.png" alt="" style="height: 50px">
+    </div>
+
+</body>
+</html>

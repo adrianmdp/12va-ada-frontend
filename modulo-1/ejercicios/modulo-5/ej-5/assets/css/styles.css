@@ -1,0 +1,106 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/**
+ * Fuentes
+ */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&family=Ubuntu:wght@300;400;700&display=swap");
+
+/**
+  * Layout
+  */
+body {
+  background-color: #eeeeee;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 100px;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.separator {
+  margin-bottom: 40px;
+}
+
+/* Titles */
+h2.title {
+  font-size: 11px;
+}
+
+/**
+ *  Fondos
+ */
+.bg-primary {
+  background-color: #cb2140;
+}
+.bg-secondary {
+  background-color: #0c1f2c;
+  color: #fff;
+}
+
+/**
+ *  Buttons
+ */
+.btn {
+  font-size: 13px;
+  text-transform: uppercase;
+  padding: 12px 50px;
+  border-radius: 30px;
+  border: 0;
+}
+.btn-primary {
+  background-color: #cb2140;
+  color: #fff;
+}
+
+/**
+ * Card component
+ */
+.card {
+  width: 600px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 0 8px 6px rgba(0, 0, 0, 0.3);
+  margin: auto;
+}
+
+.card .card-image,
+.card .card-info {
+  padding: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card .card-info p {
+  text-transform: none;
+}
+
+.card .card-image img {
+  width: 200px;
+}
+
+/**
+ * Tags components
+ */
+.tag {
+  font-size: 10px;
+  padding: 5px 10px;
+  border-radius: 30px;
+  border: 1px solid #fff;
+}
+
+.tag.tag-primary {
+  border-color: #cb2140;
+}
+
+.price em {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 200;
+}
