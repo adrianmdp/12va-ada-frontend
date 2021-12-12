@@ -8,7 +8,6 @@ body {
 
 
 .container {
-    background-color: darkgrey;
     width: 1400px;
     margin: auto;
 }
@@ -64,4 +63,38 @@ body {
         background-color: blue;
         
     }
+}
+
+/**
+ * Primary Nav
+ */
+.nav-desk { display: none; }
+.nav-mobile { display: block; }
+
+@media(min-width: 768px) {
+    .nav-desk { display: block; }
+    .nav-mobile { display: none; }
+
+}
+
+
+.primary-nav {
+    background-color: #EEE;
+    padding: 20px 0;
+}
+
+.primary-nav .navbar {
+    margin: 0;
+    padding: 0;
+}
+
+.primary-nav .navbar li {
+    list-style: none;
+    display: inline-block;
+}
+
+.primary-nav .navbar li a {
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 4px;
 }

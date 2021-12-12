@@ -1,0 +1,94 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    
+}
+.main {
+    background-color: tomato;
+}
+
+.container {
+    font-size: 26px;
+}
+
+.un-valor {
+    font-size: 5px;
+}
+
+.px {
+    font-size: 32px;
+}
+
+.rem {
+    font-size: .5rem;
+}
+
+.em {
+    font-size: 2em;
+}
+
+.box-a {
+    background-color: red;
+    height: 40px;
+}
+
+.box-a-1 {
+    width: 90%;
+    height: 20px;
+    background-color: yellow;
+}
+
+.box-a-2 {
+    width: 50%;
+    height: 20px;
+    background-color: blue;
+}
+
+.box-a-2-x {
+    width: 50%;
+    height: 10px;
+    background-color: yellowgreen;
+}
+
+.box-b {
+    width: 400px;
+    background-color: red;
+    height: 40px;
+}
+
+.box-b-1 {
+    width: 50vw;
+    height: 20px;
+    background-color: yellowgreen;
+}
+
+.btn-send {
+    margin: auto;
+}
+
+/* .box-a-2 {
+    width: 200px;
+} */
+
+.form-wrapper {
+    width: 600px;
+    height: 400px;
+    border: 1px solid #CCC;
+}
+
+.sec {
+    height: 100vh;
+}
+
+.sec-a {
+    background-color: tomato;
+}
+.sec-b {
+    background-color: cadetblue;
+}
+.sec-c {
+    background-color: steelblue;
+}
