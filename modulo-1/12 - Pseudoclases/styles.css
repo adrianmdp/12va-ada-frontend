@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/**
+ *   Before y After
+ */
+.elem-div::before {
+  content: "Hola, soy el before";
+  background-color: cadetblue;
+  color: white;
+}
+.elem-div::after {
+  content: "Hola, soy el after";
+  font-weight: bold;
+}
+
+.elem-span::before {
+  content: "Hola soy el before";
+  background-color: cadetblue;
+  color: white;
+}
+
+.elem-div::after {
+  content: "Hola, soy el after";
+  font-weight: bold;
+}
+
+.elem-span::after {
+  content: "Hola, soy el after";
+  font-weight: bold;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+}
+
+.list-primary {
+  background-color: cadetblue;
+  color: white;
+}
+
+.list li::before {
+  content: ">";
+  margin-right: 15px;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+/**
+ * Not
+ */
+.list:not(.list-primary) {
+  color: red;
+  font-weight: bold;
+}
+
+/**
+ * nth-child
+ */
+.list.list-primary li:nth-child(3n + 2) {
+  color: aquamarine;
+}
+
+/**
+ * nth-of-type
+ */
+/* ul:nth-child(3) {
+  background-color: yellow;
+} */
+
+ul:nth-of-type(3) {
+  background-color: yellow;
+}
+
+/* ul:nth-child(3) {   // esto lo dejamos xq en la clase vimos las diferencias.
+  background-color: yellow;
+} */
+
+/**
+ * Hover
+ */
+.list-primary:hover {
+  background-color: tomato;
+  font-size: 20px;
+  cursor: pointer;
+}
