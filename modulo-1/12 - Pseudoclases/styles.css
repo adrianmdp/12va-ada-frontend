@@ -44,7 +44,7 @@
 }
 
 .list li::before {
-  content: ">";
+  content: "->";
   margin-right: 15px;
   font-weight: bold;
   font-size: 10px;
@@ -62,7 +62,7 @@
  * nth-child
  */
 .list.list-primary li:nth-child(3n + 2) {
-  color: aquamarine;
+  color: blue;
 }
 
 /**
@@ -87,4 +87,26 @@ ul:nth-of-type(3) {
   background-color: tomato;
   font-size: 20px;
   cursor: pointer;
+}
+
+.box {
+  background-color: brown;
+  width: 400px;
+  height: 400px;
+}
+
+.box::before {
+  content: "";
+  background-color: coral;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+
+.box::after {
+  content: "";
+  background-color: coral;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
 }
