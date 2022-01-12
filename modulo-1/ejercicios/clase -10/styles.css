@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.main-header {
+  background-color: tomato;
+  height: 100px;
+  text-align: center;
+}
+
+.main-header .title {
+  margin: 0;
+  line-height: 100px;
+}
+
+.main-nav {
+  background-color: darkgrey;
+  height: 50px;
+}
+
+.main {
+  background-color: darkmagenta;
+  height: 300px;
+  float: left;
+  width: 75%;
+}
+
+.main-aside {
+  background-color: darkorange;
+  height: 300px;
+  width: 25%;
+  float: left;
+}
+
+@media (max-width: 768px) {
+  .main,
+  .main-aside {
+    width: 100%;
+  }
+}
+
+.main-footer {
+  background-color: darkslateblue;
+  height: 70px;
+  float: left;
+  width: 100%;
+}

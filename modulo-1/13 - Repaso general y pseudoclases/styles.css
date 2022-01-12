@@ -311,3 +311,19 @@ Ejemplo de media query
         flex-direction: row;
     }
 } */
+
+/* Whatsapp */
+.whatsapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  padding: 10px;
+  background-color: green;
+  position: sticky;
+  top: 90%;
+  bottom: 300px;
+  right: 30px;
+}
