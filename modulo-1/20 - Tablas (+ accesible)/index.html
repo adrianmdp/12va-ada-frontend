@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tablas</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+      td,
+      th {
+        width: 10px;
+        height: 10px;
+        border: 1px solid;
+      }
+      tr {
+        height: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Email</th>
+            <th>Fecha de nacimiento</th>
+            <th>Nacionalidad</th>
+            <th>Saldo</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Adrián</td>
+            <td>Solimano</td>
+            <td>adriansolimano@gmail.com</td>
+            <td>13-04-83</td>
+            <td>Argentino</td>
+            <td>123</td>
+          </tr>
+
+          <tr>
+            <td>Adrián</td>
+            <td>Solimano</td>
+            <td>adriansolimano@gmail.com</td>
+            <td></td>
+            <td>Argentino</td>
+            <td>234</td>
+          </tr>
+
+          <tr>
+            <td>Adrián</td>
+            <td>Solimano</td>
+            <td>adriansolimano@gmail.com</td>
+            <td>13-04-83</td>
+            <td>Argentino</td>
+            <td>345</td>
+          </tr>
+
+          <tr>
+            <td>Adrián</td>
+            <td>Solimano</td>
+            <td>adriansolimano@gmail.com</td>
+            <td>13-04-83</td>
+            <td>Argentino</td>
+            <td>345</td>
+          </tr>
+
+          <tr>
+            <td>Adrián</td>
+            <td>Solimano</td>
+            <td>adriansolimano@gmail.com</td>
+            <td>13-04-83</td>
+            <td>Argentino</td>
+            <td>345</td>
+          </tr>
+
+          <tr>
+            <td>Adrián</td>
+            <td>Solimano</td>
+            <td>adriansolimano@gmail.com</td>
+            <td>13-04-83</td>
+            <td>Argentino</td>
+            <td>345</td>
+          </tr>
+
+          <tr>
+            <td>Adrián</td>
+            <td>Solimano</td>
+            <td>adriansolimano@gmail.com</td>
+            <td>13-04-83</td>
+            <td>Argentino</td>
+            <td>345</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td colspan="5">Total</td>
+            <td>567</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <table border="1">
+      <tr>
+        <td colspan="8"></td>
+        <td rowspan="8"></td>
+      </tr>
+      <tr>
+        <td rowspan="8"></td>
+        <td colspan="6"></td>
+        <td rowspan="6"></td>
+      </tr>
+      <tr>
+        <td rowspan="6"></td>
+        <td colspan="4"></td>
+        <td rowspan="4"></td>
+      </tr>
+      <tr>
+        <td rowspan="4"></td>
+        <td colspan="2"></td>
+        <td rowspan="2"></td>
+      </tr>
+      <tr>
+        <td rowspan="2"></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="2"></td>
+      </tr>
+      <tr>
+        <td colspan="4"></td>
+      </tr>
+      <tr>
+        <td colspan="6"></td>
+      </tr>
+      <tr>
+        <td colspan="8"></td>
+      </tr>
+    </table>
+
+    <hr />
+
+    <table>
+      <caption>
+        Título de una tabla
+      </caption>
+      <tr>
+        <td colspan="8"></td>
+        <td rowspan="8"></td>
+      </tr>
+      <tr>
+        <td rowspan="8"></td>
+        <td colspan="6"></td>
+        <td rowspan="6"></td>
+      </tr>
+      <tr>
+        <td rowspan="6"></td>
+        <td colspan="4"></td>
+        <td rowspan="4"></td>
+      </tr>
+      <tr>
+        <td rowspan="4"></td>
+        <td colspan="2"></td>
+        <td rowspan="2"></td>
+      </tr>
+      <tr>
+        <td rowspan="2"></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="2"></td>
+      </tr>
+      <tr>
+        <td colspan="4"></td>
+      </tr>
+      <tr>
+        <td colspan="6"></td>
+      </tr>
+      <tr>
+        <td colspan="8"></td>
+      </tr>
+    </table>
+
+    <!-- Fictional example! Will not work in real life. -->
+    <tablist>
+      <tabitem target="dancing">Dancing</tabitem>
+      <tabitem target="soccer">Soccer</tabitem>
+
+      <tabpanel id="dancing">...</tabpanel>
+      <tabpanel id="soccer">...</tabpanel>
+    </tablist>
+
+    <div class="tablist">
+      <ul>
+        <li>
+          <button data-target="#dancing" class="active">Dancing</button>
+        </li>
+
+        <li>
+          <button data-target="#soccer">Soccer</button>
+        </li>
+      </ul>
+
+      <div id="dancing">...</div>
+      <div id="soccer" hidden>...</div>
+    </div>
+
+    <div class="tablist">
+      <ul role="tablist">
+        <li role="presentation">
+          <button role="tab" aria-controls="dancing" aria-selected="false">
+            Dancing
+          </button>
+        </li>
+
+        <li role="presentation">
+          <button role="tab" aria-controls="soccer" aria-selected="true">
+            Soccer
+          </button>
+        </li>
+      </ul>
+
+      <div role="tabpanel" id="dancing">...</div>
+      <div role="tabpanel" id="soccer" hidden>...</div>
+    </div>
+  </body>
+</html>
