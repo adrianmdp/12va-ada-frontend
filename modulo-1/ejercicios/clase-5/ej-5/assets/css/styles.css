@@ -89,10 +89,38 @@ h2.title {
  * Tags components
  */
 .tag {
-  font-size: 10px;
-  padding: 5px 10px;
+  /* font-size: 10px;
+  padding: 5px 10px; */
   border-radius: 30px;
   border: 1px solid #fff;
+  display: inline-block;
+}
+
+@media (max-width: 1200px) {
+  .tag {
+    font-size: 16px;
+    padding: 12px 30px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .tag {
+    font-size: 13px;
+    padding: 8px 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .tag {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .tag {
+    display: none;
+  }
 }
 
 .tag.tag-primary {

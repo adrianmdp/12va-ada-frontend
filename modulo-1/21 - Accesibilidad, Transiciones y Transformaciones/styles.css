@@ -57,3 +57,8 @@ transition */
 .box2:hover {
   transform: /* rotate(45deg) */ translateY(100px) scale(1.5) skew(5deg, 10deg);
 }
+
+.icon-test {
+  font-size: 40px;
+  color: blueviolet;
+}
