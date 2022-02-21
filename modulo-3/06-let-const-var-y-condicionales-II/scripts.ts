@@ -31,6 +31,7 @@ if (variable1 === variable2 || myDay === 10 || myMonth === 1) {
   console.log("No se cumplieron ninguna de las condiciones");
 }
 
+
 // variable1 === variable2 => false
 // myDay === 2 => false
 // myMonth === 1 => true
