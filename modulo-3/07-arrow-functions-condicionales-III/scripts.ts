@@ -7,13 +7,13 @@ const suma2 = (a: number, b: number) => a + b;
 console.log(suma1(4, 5));
 console.log(suma2(4, 5));
 
-// function saludar1(nombre) {
+// function saludar1(nombre: string) {
 //   return "Hola " + nombre;
 // }
 
-// const saludar2 = nombre => "Hola " + nombre;
+const saludar1 = (nombre: string) => "Hola" + nombre 
 
-// console.log(saludar1("Adrián"))
+const saludo = saludar1("Adrián");
 // console.log(saludar2("Adrián"))
 
 /**
