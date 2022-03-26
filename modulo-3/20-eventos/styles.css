@@ -1,0 +1,32 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.container {
+    width: 1400;
+}
+
+@media(max-width: 768) {
+    .container {
+        width: 100%;
+    }
+}
+
+.btn {
+    height: 40px;
+    line-height: 40px;
+    background-color: #CCC;
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.card {
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    padding: 15px;
+}
