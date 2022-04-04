@@ -1,0 +1,61 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.fx-slow {
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
+
+.sidebar-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+}
+
+.modal-open .sidebar-container {
+    z-index: 0;
+}
+
+.sidebar {
+    background-color: white;
+    position: fixed;
+    width: 500px;
+    right: -500px;
+    height: 100vh;
+    border: 1px solid #EEE;
+    padding: 40px;
+    overflow-y: auto;
+}
+
+.modal-open .sidebar {
+    right: 0;
+}
+
+.sidebar::before {
+    content: '';
+}
+
+.btn {
+    display: block;
+}
+
+
+
+.zoomInDown {
+    
+} 

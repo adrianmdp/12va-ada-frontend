@@ -1,0 +1,38 @@
+.modal-container {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+}
+.modal-container.show {
+    display: flex;
+}
+
+
+.modal {
+    background-color: white;
+    width: 500px;
+    max-height: 800px;
+    border: 1px solid #EEE;
+    padding: 40px;
+    overflow-y: auto;
+}
+
+.modal::before {
+    content: '';
+}
+
+.btn {
+    display: block;
+}
+
+
+
+.zoomInDown {
+    
+} 
