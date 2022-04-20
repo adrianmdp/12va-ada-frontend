@@ -1,13 +1,13 @@
 type Inhabitant = {
-   id: number
+   id?: number
    name: string
-   thumbnail: string
+   thumbnail?: string
    age: number
-   weight: number
-   height: number
-   hair_color: string
-   professions: string[]
-   friends: string[]
+   weight?: number
+   height?: number
+   hair_color?: string
+   professions?: string[]
+   friends?: string[]
 }
 
 const inhabitants: Inhabitant[] = [
