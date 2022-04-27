@@ -1,0 +1,22 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    border: 1px solid #CCC;
+    max-width: 400px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.image {
+    max-width: 100%;
+}
