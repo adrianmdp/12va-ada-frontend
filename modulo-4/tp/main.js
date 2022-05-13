@@ -1,4 +1,4 @@
-const initialData = [
+var initialData = [
     {
         id: 0,
         name: "Tobus Quickwhistle",
@@ -6,7 +6,7 @@ const initialData = [
         age: 306,
         weight: 39.065952,
         height: 107.75835,
-        hair_color: "Pink",
+        hair_color: "Pink"
     },
     {
         id: 1,
@@ -15,55 +15,37 @@ const initialData = [
         age: 288,
         weight: 35.279167,
         height: 110.43628,
-        hair_color: "Green",
+        hair_color: "Green"
     }
-]
-
+];
 localStorage.setItem('personajes', JSON.stringify(initialData));
-
-
 /**
- * 
+ *
  */
- const tableInhabitants: HTMLTableElement = document.getElementById('inhabitants') as HTMLTableElement
-
- const tbody = tableInhabitants.querySelector('tbody')
-
-const loadInhabitats = () => {
-
-    const inhabitants = JSON.parse(localStorage.getItem('personajes'));
-
+var tableInhabitants = document.getElementById('inhabitants');
+var tbody = tableInhabitants.querySelector('tbody');
+var loadInhabitats = function () {
+    var inhabitants = JSON.parse(localStorage.getItem('personajes'));
     tbody.innerHTML = "";
-
-    inhabitants.forEach(inhabitant => {
-    
-        const tr = document.createElement('tr')
-        
-        for(const prop in inhabitant) {
-            const td = document.createElement('td');
-            td.appendChild(document.createTextNode(inhabitant[prop]))
+    inhabitants.forEach(function (inhabitant) {
+        var tr = document.createElement('tr');
+        for (var prop in inhabitant) {
+            var td = document.createElement('td');
+            td.appendChild(document.createTextNode(inhabitant[prop]));
             tr.appendChild(td);
         }
-    
         tbody.appendChild(tr);
-    })
-}
+    });
+};
 loadInhabitats();
-
 /**
- * 
+ *
  */
-const formAddInhabitants = document.getElementById('add-inhabitant');
-
-
-formAddInhabitants.addEventListener('submit', (e) => {
-    e.preventDefault()
-
+var formAddInhabitants = document.getElementById('add-inhabitant');
+formAddInhabitants.addEventListener('submit', function (e) {
+    e.preventDefault();
     console.log(localStorage.getItem('personajes'));
-    
-
-    const ls_data = JSON.parse(localStorage.getItem('personajes')); 
-
+    var ls_data = JSON.parse(localStorage.getItem('personajes'));
     ls_data.push({
         id: e.target.id.value,
         name: e.target.name.value,
@@ -71,13 +53,10 @@ formAddInhabitants.addEventListener('submit', (e) => {
         age: e.target.age.value,
         weight: e.target.weight.value,
         height: e.target.height.value,
-        hair_color: e.target.hair_color.value,
-    })
-
-    localStorage.setItem('personajes', JSON.stringify(ls_data))
-
-    loadInhabitats()
-
+        hair_color: e.target.hair_color.value
+    });
+    localStorage.setItem('personajes', JSON.stringify(ls_data));
+    loadInhabitats();
     // data.push({
     //     id: e.target.id.value,
     //     name: e.target.name.value,
@@ -87,7 +66,5 @@ formAddInhabitants.addEventListener('submit', (e) => {
     //     height: e.target.height.value,
     //     hair_color: e.target.hair_color.value,
     // })
-
     // loadInhabitats(data);    
-
-})
+});
