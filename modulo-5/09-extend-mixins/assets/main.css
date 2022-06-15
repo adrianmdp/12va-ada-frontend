@@ -1,0 +1,62 @@
+/**
+ * @mixins
+ */
+.list-news {
+  padding: 0;
+  margin: 5px;
+  list-style: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/**
+ * @function
+ */
+.sidebar {
+  float: left;
+  margin-left: 64px;
+}
+
+.header {
+  background-color: #523314;
+}
+
+/**
+ *
+ */
+.icon-mail {
+  background-image: url("/icons/mail.svg");
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.icon-phone {
+  background-image: url("/icons/phone.svg");
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.icon-facebook {
+  background-image: url("/icons/facebook.svg");
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.icon-twitter {
+  background-image: url("/icons/twitter.svg");
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.icon-instagram {
+  background-image: url("/icons/instagram.svg");
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,37 @@
+.sports {
+    /* reglas css */
+}
+
+.title {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+section header .title {
+    font-size: 30px;
+}
+
+.sports header .title {
+    background-color: green;
+    color: white;
+}
+
+.sports article .title {
+    color: green;
+}
+
+
+.sports article .title span {
+    color: greenyellow;
+}
+
+.news {
+
+}
+
+.news article .title {
+    color: blue;
+}
+
+.news article .title span {
+    color: aqua;
+}

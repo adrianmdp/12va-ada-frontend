@@ -1,0 +1,6 @@
+body {
+    background-color: $primary;
+    color: rgba($secondary, $alpha);
+    border: $border-default;
+    font-size: $font-small + 4px;
+}

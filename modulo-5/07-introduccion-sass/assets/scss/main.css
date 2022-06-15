@@ -1,0 +1,42 @@
+body {
+  background-color: #1250c4;
+  color: rgba(185, 49, 212, 0.4);
+  border: "1px solid rgb(185, 49, 212)";
+  font-size: 14px;
+}
+
+.btn {
+  padding: 15px;
+}
+
+.btn-primary {
+  background-color: green;
+}
+
+.btn-delete {
+  background-color: brown;
+}
+
+.card.card-primary {
+  border: 1px solid #1250c4;
+  background-color: #1354cd;
+  padding: 20px;
+}
+.card-header {
+  /* code */
+}
+.card .card-body {
+  color: white;
+  padding: 20px;
+}
+.card .card-body .title {
+  font-size: 20px;
+}
+.card .card-footer {
+  /* code */
+}
+.card > .btn-delete {
+  background-color: red;
+}
+
+/*# sourceMappingURL=main.css.map */

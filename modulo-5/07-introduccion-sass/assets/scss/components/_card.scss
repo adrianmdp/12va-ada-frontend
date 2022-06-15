@@ -1,0 +1,48 @@
+.btn-delete {
+    background-color: brown;
+}
+
+.card {
+
+    &.card-primary {
+        border: 1px solid $primary;
+        background-color: lighten($color: $primary, $amount: 2);
+        padding: 20px;
+    }
+
+    &-header {
+        /* code */
+    }
+    
+    .card-body {
+        color: white;
+        padding: 20px;
+        
+        .title {
+            font-size: 20px;
+        }
+    }
+
+    .card-footer {
+        /* code */
+    }
+
+    & > .btn-delete {
+        background-color: red;
+    }
+
+}
+
+
+
+.card {
+
+}
+
+.card.card-primary {
+
+}
+
+.card .card-body {
+
+}

@@ -1,0 +1,87 @@
+// /**
+//  * @extend
+//  */
+
+// .card {
+//     border: 1px solid #DDD;
+//     border-radius: 5px;
+//     background-color: #EEE;
+
+//     .card-body {
+//         @extend .card;
+//         font-size: 20px;
+//     }
+
+// }
+
+// .accordion {
+//     @extend .card;
+
+//     padding: 20px;
+
+// }
+
+
+/**
+ * @mixins
+ */
+@mixin default-list($font-size: 20px, $list-style: none, $padding: 0, $margin: 0) {
+    padding: $padding;
+    margin: $margin;
+    list-style: $list-style;
+    font-size: $font-size;
+}
+
+
+.list-news {
+    @include default-list($margin: 5px);
+    font-weight: bold;
+}
+
+/**
+ * @function
+ */
+ @function pow($base, $exponent) {
+    $result: 1;
+
+    @for $_ from 1 through $exponent {
+      $result: $result * $base;
+    }
+
+    @return $result;
+}
+  
+.sidebar {
+    float: left;
+    margin-left: pow(4, 3) * 1px;
+}
+
+
+
+@function invert($color, $amount: 100%) {
+    $inverse: change-color($color, $hue: hue($color) + 180);
+    @return mix($inverse, $color, $amount);
+  }
+  
+$primary-color: #036;
+.header {
+    background-color: invert($primary-color, 80%);
+}
+
+/**
+ *
+ */
+@mixin corner-icon($name, $top-or-bottom, $left-or-right) {
+   .icon-#{$name} {
+     background-image: url("/icons/#{$name}.svg");
+     position: absolute;
+     #{$top-or-bottom}: 0;
+     #{$left-or-right}: 0;
+   }
+ }
+ 
+ @include corner-icon("mail", top, left);
+ @include corner-icon("phone", top, left);
+ @include corner-icon("facebook", top, left);
+ @include corner-icon("twitter", top, left);
+ @include corner-icon("instagram", top, left);
