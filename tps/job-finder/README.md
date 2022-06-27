@@ -13,7 +13,9 @@
     - Deben respetar la estructura dada por el ejemplo, en tamanio y dimensiones.
     - DEBE ser responsive. Se revisara mobile y tablets tanto en portrait como en landscape.
     - DEBE respetar el flow propuesto, es decir, donde y como aparecen los elementos segun los clicks del usuario.
-- API:
+- API (elegir una de las opciones):
+    - Mock API
+    - Firebase
 
 ## Flow del proyecto
 
