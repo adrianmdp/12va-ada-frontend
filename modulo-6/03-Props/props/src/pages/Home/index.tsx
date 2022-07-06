@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { Card } from '../../components/Card'
+import { Card, ListJob } from '../../components'
 
 type Props = {
     data: any[]
@@ -20,18 +20,13 @@ const Home: FC<Props> = ({data, className, title}) => {
                 return (
                     <>
                         <Card className="card-job">
-                            <ul>
-                                <li>Nombre: {elem.name}</li>
-                                <li>Ubicación: {elem.location}</li>
-                                <li>Seniority: {elem.seniority}</li>
-                            </ul>
+                            <ListJob job={elem} />
                         </Card>
                         <hr />
                     </>
                 )
             })}
 
-        
             <br />
 
             <ul>

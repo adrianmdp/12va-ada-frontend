@@ -54,11 +54,21 @@ const getUsers = () => {
 
 const makeUsersTable = async () => {
 
+    console.log("mostrar loader")
+
     const otherUsers = await getUsers()
+    
+    setTimeout(() => {
 
-    console.log(otherUsers);
+        console.log(otherUsers);
+        
+        console.log("Hola mundo");
+        
+        console.log("ocultar loader");
 
-    return otherUsers;
+        return otherUsers;
+
+    }, 3000);
     
 }
 
