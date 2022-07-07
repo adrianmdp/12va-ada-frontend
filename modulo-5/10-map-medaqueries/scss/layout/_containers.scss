@@ -1,0 +1,26 @@
+@use "sass:map";
+
+.container {
+
+    width: 1400px;
+
+    @media #{$deskt} {
+        width: 1080px;
+    }
+
+    @media #{$tablet} {
+        width: 900px;
+    }
+
+    @media #{$mobile} {
+        width: 100%;
+    }
+
+}
+
+
+
+
+
+
+

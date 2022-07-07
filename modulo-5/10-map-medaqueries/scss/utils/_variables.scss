@@ -1,0 +1,28 @@
+@use "sass:map";
+
+// Listas
+$values: (123, 321, 10);
+
+$values2 : 123, 321, 10;
+
+$values3: 123 321 10;
+
+
+// Map
+$breakpoints: (
+    "xs": 480px, 
+    "sm": "(max-width: 768px)",
+    "md": "(max-width: 992px)",
+    "lg": "(max-width: 1140px)",
+    "xl": 1400px
+);
+
+$colors: (
+    "primary": blue,
+    "secondary": #777,
+);
+
+$tablet: map.get($breakpoints, "md");
+$mobile: map.get($breakpoints, "sm");
+$deskt: map.get($breakpoints, "lg");
+$deskt: map.set($breakpoints, "lg", "(max-width: 1240px)");

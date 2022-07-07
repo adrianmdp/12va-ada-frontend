@@ -1,0 +1,9 @@
+@use "sass:map";
+
+.btn {
+
+    &.primary {
+        background-color: map.get($colors, "primary");
+    }
+
+}
