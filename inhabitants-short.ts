@@ -10,7 +10,7 @@ type Inhabitant = {
    friends?: string[]
 }
 
-const inhabitants: Inhabitant[] = [
+export const inhabitants: Inhabitant[] = [
      {
        id: 0,
        name: "Tobus Quickwhistle",
