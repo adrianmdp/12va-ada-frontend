@@ -1,4 +1,5 @@
 import { Button, Card } from "../../components"
+import { Prueba } from "../../components/common/Prueba"
 import { inhabitants } from '../../data'
 
 // 1 Quiero que se muestre una card por cada inhabitant
@@ -31,6 +32,20 @@ const Home = () => {
             </main>
 
             <footer>Este es el footer de la pagina</footer>
+
+            <hr />
+
+            <Prueba pepe={() => {
+                console.log('Hola mundo')
+            }} />
+
+            <button onClick={() => {
+                console.log('Hola mundo')
+            }}>Boton test</button>
+
+            <div onClick={() => {
+                console.log('Hola mundo')
+            }}>Div clickable</div>
         </>
 
     )

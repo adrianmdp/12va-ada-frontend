@@ -26,9 +26,11 @@ const Card: FC<Props> = ({ children, title }) => {
             <div className="card-footer">
                 <Button 
                     text={ isActive ? 'Desactivar' : 'Activar' } 
-                    onClick={() => { 
-                        setIsActive(prevState => !prevState)
-                    }} />
+                    handleClick={
+                        () => { 
+                            setIsActive(prevState => !prevState)
+                        }
+                    } />
             </div>
         </div>
     )

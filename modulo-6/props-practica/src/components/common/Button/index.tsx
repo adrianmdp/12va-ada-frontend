@@ -2,13 +2,13 @@ import { FC, ReactNode } from "react"
 
 type Props = {
     text: string
-    prueba: () => void
+    handleClick: () => void
 }
 
-const Button: FC<Props> = ({ text, prueba }) => {
+const Button: FC<Props> = ({ text, handleClick }) => {
 
     return(
-        <button onClick={prueba}>
+        <button onClick={handleClick}>
             {text}
         </button>
     )
