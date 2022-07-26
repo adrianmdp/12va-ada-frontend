@@ -9,7 +9,7 @@ const Detail = () => {
     const [user, setUser] = useState<User>()
 
     const cargarUser = () => {
-        fetch(`https://todoapp-c3a11-default-rtdb.firebaseio.com/users/${params.pepe}.json`)
+        fetch(`https://todoapp-c3a11-default-rtdb.firebaseio.com/users/${params.id}.json`)
             .then(response => response.json())
             .then(data => setUser(data));
     }

@@ -11,6 +11,8 @@ const Card: FC<Props> = ({ children, title }) => {
 
     const [isActive, setIsActive] = useState(false);
 
+    
+
     return (
         <div className={`card${isActive ? ' active' : ''}`}>
             { title && (
