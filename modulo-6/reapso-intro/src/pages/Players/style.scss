@@ -1,0 +1,13 @@
+.players {
+
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 33%;
+        margin-bottom: 20px;
+    }
+
+}

@@ -1,0 +1,31 @@
+.card {
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+    &.active {
+        border-color: rgb(13, 220, 106);
+        background-color: rgb(163, 241, 198);
+
+        .card-header {
+            border-bottom: 1px solid rgb(13, 220, 106);;
+        }
+    
+        .card-footer {
+            border-top: 1px solid rgb(13, 220, 106);;
+        }
+    }
+
+    &-header, &-body, &-footer {
+        padding: 14px;
+    }
+
+    &-header {
+        border-bottom: 1px solid #CCC;
+    }
+
+    &-footer {
+        border-top: 1px solid #CCC;
+    }
+
+}
