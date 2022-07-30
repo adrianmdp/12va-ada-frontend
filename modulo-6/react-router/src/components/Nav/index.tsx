@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom'
+import img from './asd.png'
 
 const Nav = () => {
 
@@ -12,6 +13,7 @@ const Nav = () => {
                     <NavLink to="/categories">Categories</NavLink>
                 </li>
             </ul>
+            <img src={img} alt="" />
         </nav>
     )
 

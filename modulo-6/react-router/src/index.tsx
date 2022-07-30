@@ -14,16 +14,23 @@ root.render(
   <BrowserRouter>
     <Nav />
       <Routes>
-        <Route path='/' element={<App />}>
-          <Route path="/users" element={<Users />}>
-            <Route index element={<UsersList />} />
-            <Route path="add" element={<AddUser /> } />
-            <Route path=':pepe' element={<UserDetail />} />
+        <Route path='/' element={<App />}> /
+          <Route path="" element={<UsersOutlet />}> /
+            <Route index element={<UsersList />} /> /
+            <Route path="users/add" element={<AddUser /> } /> /users/add
+            <Route path='users/:pepe' element={<UserDetail />} /> /users/:pepe
           </Route>
 
 
 
-          <Route path='/categories' element={<Categories />} />
+          <Route path='categories' element={<CategoriesOutlet />}> /categories
+            <Route index element={<CategoryList />} /> /categories
+            <Route path="add" element={<AddUser /> } /> /categories/add
+            <Route path=':pepe' element={<UserDetail />} /> /categories/:pepe
+          </Route>
+
+          <Route path='/tasks' element={<TasksOutlet />}>
+          </Route>
         </Route>
 
         {/* <Route path="/" element={<App />}>
