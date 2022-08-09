@@ -14,7 +14,9 @@ const add = (user: UserPayload) => {
 }
 
 const getAll = async (search: string) => {
-    const response = await fetch(`https://ava-9f390-default-rtdb.firebaseio.com/users.json?find=${search}`);
+    const response = await fetch(
+        `https://ava-9f390-default-rtdb.firebaseio.com/users.json?find=${search}`
+    );
     const data = await response.json()
 
     return mapToArray(data);

@@ -25,7 +25,9 @@ const Users = () => {
             .then(resp => setUsers(resp))
             .catch(err => setError(err))
 
-    }, [search])
+        setSearch('');
+
+    })
 
     return (
         <Layout page="users">
