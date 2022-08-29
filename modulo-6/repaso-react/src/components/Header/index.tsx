@@ -1,13 +1,18 @@
+import { useContext } from "react";
+import { PruebaContext } from "../../contexts/Prueba";
+
 const Header = () => {
-    return (
-        <header className="header">
-            Logo 
+  const { theme, changeTheme } = useContext(PruebaContext);
 
-            <form action="">
-                Buscar
-            </form>
-        </header>
-    )
-}
+  return (
+    <header className="header">
+      Logo
+      <button onClick={() => changeTheme("light")}>
+        Cambiar tema ({theme})
+      </button>
+      <form action="">Buscar</form>
+    </header>
+  );
+};
 
-export { Header }
+export { Header };
